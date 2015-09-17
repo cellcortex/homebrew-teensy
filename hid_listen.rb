@@ -2,7 +2,7 @@ require 'formula'
 
 class HidListen < Formula
   homepage 'https://www.pjrc.com/teensy/hid_listen.html'
-  version '20150917'
+  version '20150918'
   url 'https://www.pjrc.com/teensy/hid_listen.mac'
   sha1 'fc8b20ca9e13511fda30c77dee4f32c2072c3e08'
 
