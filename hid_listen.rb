@@ -10,6 +10,7 @@ class HidListen < Formula
     ohai 'Copying binaries...'
 #    system 'cp', '-v', 'hid_listen.mac', "#{prefix}/"
     bin.install "hid_listen.mac"
+    chmod 0555, Dir["#{bin}/hid_listen.mac"]
   end
 end
 
