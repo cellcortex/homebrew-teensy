@@ -9,7 +9,7 @@ class HidListen < Formula
   def install 
     ohai 'Copying binaries...'
 #    system 'cp', '-v', 'hid_listen.mac', "#{prefix}/"
-    prefix.install "hid_listen.mac"
+    bin.install "hid_listen.mac"
   end
 end
 
