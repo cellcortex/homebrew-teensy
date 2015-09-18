@@ -19,6 +19,7 @@ class TeensyCli < Formula
 
     # system "cmake", ".", *std_cmake_args
     system "make", "teensy_loader_cli" # if this fails, try separate make/make install steps
+    chmod 0555, "teensy_loader_cli"
     bin.install "teensy_loader_cli" 
   end
 
