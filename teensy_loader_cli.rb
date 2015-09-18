@@ -17,6 +17,7 @@ class TeensyLoaderCli < Formula
 
     # system "cmake", ".", *std_cmake_args
     system "make", "teensy_loader_cli" # if this fails, try separate make/make install steps
+    bin.install "teensy_loader_cli" 
   end
 
   test do
