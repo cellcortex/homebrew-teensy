@@ -6,7 +6,7 @@ class TeensyCli < Formula
   desc "Command-line integration for Teensy USB development boards"
   homepage "https://www.pjrc.com/teensy/loader_cli.html"
   url "https://github.com/PaulStoffregen/teensy_loader_cli"
-  version "0.3"
+  version "0.4"
   sha256 "365cd46d64acb7068de457b9b1103b56e69438cf7b0764f7cf2b3eb623fc0ab2"
 
   # depends_on "cmake" => :build
