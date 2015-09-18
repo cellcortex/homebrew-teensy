@@ -6,7 +6,7 @@ class TeensyCli < Formula
   desc "Command-line integration for Teensy USB development boards"
   homepage "https://www.pjrc.com/teensy/loader_cli.html"
   url "https://github.com/PaulStoffregen/teensy_loader_cli"
-  version "2.2"
+  version "2.3"
   sha256 "f8e61573e22a8a88adde5960a1b8eee19e95a1b40b3d66a6aa1ee890a654c71f"
 
   # depends_on "cmake" => :build
@@ -20,7 +20,8 @@ class TeensyCli < Formula
     # system "cmake", ".", *std_cmake_args
     system "make", "teensy_loader_cli" # if this fails, try separate make/make install steps
     chmod 0555, "teensy_loader_cli"
-    bin.install "teensy_loader_cli" 
+    system 'cp', '-v', 'teensy_loader_cli', "#{prefix}/"
+#    bin.install "teensy_loader_cli" 
   end
 
   test do
