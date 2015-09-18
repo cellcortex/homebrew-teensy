@@ -7,7 +7,7 @@ class TeensyCli < Formula
   homepage "https://www.pjrc.com/teensy/loader_cli.html"
   url "https://github.com/PaulStoffregen/teensy_loader_cli"
   version "2.2"
-  sha256 "75b7e525fa8c7908ad2410597b89d2fcbb8b2451aa00e9fe224f640d5a233721"
+  sha256 "f8e61573e22a8a88adde5960a1b8eee19e95a1b40b3d66a6aa1ee890a654c71f"
 
   # depends_on "cmake" => :build
   depends_on "libusb"
