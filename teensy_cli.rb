@@ -2,7 +2,7 @@
 #                http://www.rubydoc.info/github/Homebrew/homebrew/master/frames
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 
-class TeensyLoaderCli < Formula
+class TeensyCli < Formula
   desc "Command-line integration for Teensy USB development boards"
   homepage "https://www.pjrc.com/teensy/loader_cli.html"
   url "https://github.com/PaulStoffregen/teensy_loader_cli"
@@ -10,7 +10,8 @@ class TeensyLoaderCli < Formula
   sha256 "18ba669c941f7ba5662f0089c8e132f78d8d648e29cd939f67db33ee2ffa97cf"
 
   # depends_on "cmake" => :build
-  depends_on :libusb # if your formula requires any X11/XQuartz components
+  depends_on :libusb
+  conflicts_with "teensy_loader_cli", :because => "this is a better/different way to build it"
 
   def install
     # ENV.deparallelize  # if your formula fails when building in parallel
